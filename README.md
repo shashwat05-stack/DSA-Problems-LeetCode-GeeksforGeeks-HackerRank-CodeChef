@@ -31,9 +31,9 @@
 
 ```
 📦 coding-solutions/
-├── hackerrank/
+├── gfg/
 ├── codechef/
-└── gfg/
+└── hackerrank/
 ```
 
 ---
