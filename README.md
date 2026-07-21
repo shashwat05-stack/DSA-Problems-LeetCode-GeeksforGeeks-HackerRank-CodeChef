@@ -16,6 +16,7 @@
 
 | Difficulty | Solved |
 |:---:|:---:|
+| 🔵 Basic | **0** |
 | 🟢 Easy | **2** |
 | 🟡 Medium | **1** |
 | 🔴 Hard | **0** |
