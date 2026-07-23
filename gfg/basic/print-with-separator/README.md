@@ -20,7 +20,7 @@ Explanation: a and b are printed with the separator symbol in between.
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-07-23T08:05:06.096Z  
+**Submitted:** 2026-07-23T08:10:26.784Z  
 
 ```java
 import java.util.Scanner;
