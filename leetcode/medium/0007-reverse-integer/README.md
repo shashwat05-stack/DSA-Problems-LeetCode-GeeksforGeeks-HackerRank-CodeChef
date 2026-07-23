@@ -43,14 +43,14 @@ Output: 21
 ## Solution
 
 **Language:** Java  
-**Runtime:** 0 ms  
-**Memory:** 42.2 MB  
-**Submitted:** 2026-07-23T17:36:27.940Z  
+**Runtime:** 1 ms (beats 99.97%)  
+**Memory:** 42.6 MB (beats 45.93%)  
+**Submitted:** 2026-07-23T17:37:33.618Z  
 
 ```java
 class Solution {
     public int reverse(int x) {
-        int reverse = 0;
+        long reverse = 0;
 
         while(x != 0){
             int digit = x % 10;
