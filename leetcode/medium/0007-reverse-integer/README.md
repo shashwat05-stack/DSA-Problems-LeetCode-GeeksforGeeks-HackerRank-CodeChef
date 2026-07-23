@@ -44,8 +44,8 @@ Output: 21
 
 **Language:** Java  
 **Runtime:** 0 ms  
-**Memory:** 42 MB  
-**Submitted:** 2026-07-23T17:31:26.070Z  
+**Memory:** 42.2 MB  
+**Submitted:** 2026-07-23T17:36:27.940Z  
 
 ```java
 class Solution {
@@ -53,13 +53,14 @@ class Solution {
         int reverse = 0;
 
         while(x != 0){
-            x = x/10;
             int digit = x % 10;
-            
             reverse = reverse * 10 + digit;
-            
+            x = x/10;
         }
-        return reverse;
+         if (reverse > Integer.MAX_VALUE || reverse < Integer.MIN_VALUE) {
+            return 0;
+         }
+        return (int) reverse;
     }
         }
 ```
