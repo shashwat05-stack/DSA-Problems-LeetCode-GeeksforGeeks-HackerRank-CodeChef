@@ -46,9 +46,9 @@ Output: []
 ## Solution
 
 **Language:** Java  
-**Runtime:** 6 ms (beats 90.29%)  
-**Memory:** 57.3 MB (beats 96.77%)  
-**Submitted:** 2026-07-25T10:18:53.978Z  
+**Runtime:** 0 ms  
+**Memory:** 43 MB  
+**Submitted:** 2026-07-25T10:19:10.480Z  
 
 ```java
 class Solution {
@@ -72,7 +72,7 @@ class Solution {
             return ans;
         }
 
-        static void swap(int[] nums, int first, int second){
+        void swap(int[] nums, int first, int second){
         int temp = nums[first];
         nums[first] = nums[second];
         nums[second] = temp;
