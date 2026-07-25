@@ -39,9 +39,9 @@ Output: [2]
 ## Solution
 
 **Language:** Java  
-**Runtime:** 6 ms (beats 82.53%)  
-**Memory:** 66.9 MB (beats 84.60%)  
-**Submitted:** 2026-07-25T08:27:32.827Z  
+**Runtime:** 7 ms (beats 49.92%)  
+**Memory:** 67.1 MB (beats 64.46%)  
+**Submitted:** 2026-07-25T08:31:36.812Z  
 
 ```java
 class Solution {
@@ -66,10 +66,10 @@ class Solution {
             return ans;
         }
 
-    void swap(int[] arr, int first, int second){
-        int temp = arr[first];
-        arr[first] = arr[second];
-        arr[second] = temp;
+    void swap(int[] nums, int first, int second){
+        int temp = nums[first];
+        nums[first] = nums[second];
+        nums[second] = temp;
     }
 }
     
