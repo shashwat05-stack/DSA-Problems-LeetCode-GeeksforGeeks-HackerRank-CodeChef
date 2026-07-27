@@ -51,19 +51,19 @@ The input binary string  **1111111111111111111111111111101**  has a total of thi
 ## Solution
 
 **Language:** Java  
-**Runtime:** 0 ms (beats 100.00%)  
-**Memory:** 42.6 MB (beats 12.09%)  
-**Submitted:** 2026-07-22T12:02:36.907Z  
+**Runtime:** 1 ms (beats 31.44%)  
+**Memory:** 42.4 MB (beats 48.38%)  
+**Submitted:** 2026-07-27T12:00:43.762Z  
 
 ```java
 class Solution {
     public int hammingWeight(int n) {
         int count = 0;
-        while(n!=0){
-            if((n&1)==1){
+        while(n != 0){
+            if((n & 1) == 1){
                 count++;
             }
-            n >>>=1;
+            n >>>= 1;
         }
         return count;
     }
