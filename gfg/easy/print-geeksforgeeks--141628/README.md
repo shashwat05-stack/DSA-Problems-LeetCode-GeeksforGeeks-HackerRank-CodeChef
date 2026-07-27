@@ -17,7 +17,7 @@ Output: "GeeksForGeeks"
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-07-27T07:07:02.227Z  
+**Submitted:** 2026-07-27T07:07:13.003Z  
 
 ```java
 import java.util.*;
