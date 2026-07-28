@@ -60,8 +60,8 @@ Could you solve this problem in linear time with constant space?
 
 **Language:** Java  
 **Runtime:** 0 ms (beats 100.00%)  
-**Memory:** 42.2 MB (beats 78.67%)  
-**Submitted:** 2026-07-28T13:24:03.393Z  
+**Memory:** 42.3 MB (beats 71.17%)  
+**Submitted:** 2026-07-28T13:26:18.216Z  
 
 ```java
 class Solution {
