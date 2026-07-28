@@ -59,27 +59,38 @@ Could you solve this problem in linear time with constant space?
 ## Solution
 
 **Language:** Java  
-**Runtime:** 3 ms (beats 62.03%)  
-**Memory:** 42.6 MB (beats 45.70%)  
-**Submitted:** 2026-07-28T13:22:22.743Z  
+**Runtime:** 0 ms (beats 100.00%)  
+**Memory:** 42.2 MB (beats 78.67%)  
+**Submitted:** 2026-07-28T13:24:03.393Z  
 
 ```java
 class Solution {
     public int findTheWinner(int n, int k) {
-        ArrayList<Integer> list = new ArrayList<>();
+//         ArrayList<Integer> list = new ArrayList<>();
 
-        for (int i = 1; i <= n; i++) {
-            list.add(i);
+//         for (int i = 1; i <= n; i++) {
+//             list.add(i);
+//         }
+
+//         int index = 0;
+
+//         while (list.size() > 1) {
+//             index = (index + k - 1) % list.size();
+//             list.remove(index);
+//         }
+
+//         return list.get(0);
+//     }
+// }
+
+
+ int winner = 0;
+
+        for (int i = 2; i <= n; i++) {
+            winner = (winner + k) % i;
         }
 
-        int index = 0;
-
-        while (list.size() > 1) {
-            index = (index + k - 1) % list.size();
-            list.remove(index);
-        }
-
-        return list.get(0);
+        return winner + 1;
     }
 }
 ```
