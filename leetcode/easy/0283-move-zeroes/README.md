@@ -41,8 +41,8 @@ Output: [0]
 
 **Language:** Java  
 **Runtime:** 2 ms (beats 92.11%)  
-**Memory:** 47.6 MB (beats 76.34%)  
-**Submitted:** 2026-07-30T10:34:19.386Z  
+**Memory:** 48 MB (beats 20.44%)  
+**Submitted:** 2026-07-30T10:34:29.109Z  
 
 ```java
 class Solution {
@@ -54,7 +54,6 @@ class Solution {
                 swap(nums,i,j); 
                 j++;
             }
-            
         }
     }
     static void swap(int[] nums, int a, int b){
