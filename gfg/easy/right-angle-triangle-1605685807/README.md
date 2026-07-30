@@ -36,7 +36,7 @@ Explanation: Length of perpendicular and base of triangle is 3.
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-07-22T18:38:03.927Z  
+**Submitted:** 2026-07-30T09:31:58.658Z  
 
 ```java
 import java.util.Scanner;
@@ -48,7 +48,7 @@ class GFG {
 
         // code here
         for(int i=0;i<n;i++){
-            for(int j=0;j<i+1;j++){
+            for(int j=0;j<=i;j++){
                 System.out.print("* ");
             }
             System.out.println();
