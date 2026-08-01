@@ -58,9 +58,9 @@ The third distinct maximum is 1.
 ## Solution
 
 **Language:** Java  
-**Runtime:** 7 ms (beats 32.20%)  
-**Memory:** 45.4 MB (beats 27.20%)  
-**Submitted:** 2026-08-01T16:02:13.191Z  
+**Runtime:** 6 ms (beats 38.74%)  
+**Memory:** 45.2 MB (beats 35.01%)  
+**Submitted:** 2026-08-01T16:02:35.486Z  
 
 ```java
 class Solution {
