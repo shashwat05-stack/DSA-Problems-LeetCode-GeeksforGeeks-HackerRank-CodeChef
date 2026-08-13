@@ -49,17 +49,14 @@ Output: false
 ## Solution
 
 **Language:** Java  
-**Runtime:** 1 ms (beats 96.63%)  
-**Memory:** 42.5 MB (beats 55.88%)  
-**Submitted:** 2026-07-27T11:58:20.453Z  
+**Runtime:** 1 ms (beats 96.59%)  
+**Memory:** 42.5 MB (beats 56.04%)  
+**Submitted:** 2026-08-13T19:21:59.870Z  
 
 ```java
 class Solution {
     public boolean isPowerOfTwo(int n) {
-        if(n <= 0){
-            return false;
-        }
-        return(n & (n - 1)) == 0;
+        return n > 0 && (n & (n - 1)) == 0;
     }
 }
 ```
