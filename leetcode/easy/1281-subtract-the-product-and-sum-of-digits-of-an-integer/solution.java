@@ -2,7 +2,7 @@ class Solution {
     public int subtractProductAndSum(int n) {
         int prod = 1;
         int sum = 0;
-        
+        int result;
         while(n > 0){
             int digit = n % 10;
             prod *= digit;
@@ -10,7 +10,7 @@ class Solution {
             n = n/10; 
             
         }
-        int result = prod - sum;
+        result = prod - sum;
         return result;
     }
 }
