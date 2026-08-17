@@ -42,22 +42,24 @@ Result = 32 - 11 = 21
 
 **Language:** Java  
 **Runtime:** 0 ms (beats 100.00%)  
-**Memory:** 42.2 MB (beats 46.87%)  
-**Submitted:** 2026-07-24T17:46:00.663Z  
+**Memory:** 42.1 MB (beats 47.75%)  
+**Submitted:** 2026-08-17T18:15:07.093Z  
 
 ```java
 class Solution {
     public int subtractProductAndSum(int n) {
-        int product = 1;
+        int prod = 1;
         int sum = 0;
-
-        while(n>0){
+        
+        while(n > 0){
             int digit = n % 10;
-            product *= digit;
+            prod *= digit;
             sum += digit;
-            n /= 10;
+            n = n/10; 
+            
         }
-        return (product-sum);
+        int result = prod - sum;
+        return result;
     }
 }
 ```
