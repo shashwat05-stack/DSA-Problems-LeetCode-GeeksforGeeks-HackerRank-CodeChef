@@ -47,8 +47,8 @@ Output: ["1","2","Fizz","4","Buzz","Fizz","7","8","Fizz","Buzz","11","Fizz","13"
 
 **Language:** Java  
 **Runtime:** 1 ms (beats 99.91%)  
-**Memory:** 46.8 MB (beats 66.27%)  
-**Submitted:** 2026-08-17T18:27:38.451Z  
+**Memory:** 46.7 MB (beats 84.35%)  
+**Submitted:** 2026-08-17T18:29:01.111Z  
 
 ```java
 class Solution {
