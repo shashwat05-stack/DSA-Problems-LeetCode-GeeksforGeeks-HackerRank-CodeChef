@@ -33,9 +33,9 @@ Explanation: The odd numbers between 8 and 10 are [9].
 ## Solution
 
 **Language:** Java  
-**Runtime:** 0 ms  
-**Memory:** 41.7 MB  
-**Submitted:** 2026-08-17T08:03:58.643Z  
+**Runtime:** 0 ms (beats 100.00%)  
+**Memory:** 42.3 MB (beats 7.62%)  
+**Submitted:** 2026-08-17T08:04:06.248Z  
 
 ```java
 class Solution {
