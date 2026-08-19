@@ -45,13 +45,13 @@ Given two strings `str1` and `str2`, return  *the largest string* `x` *such that
 
 **Language:** Java  
 **Runtime:** 0 ms  
-**Memory:** 42.3 MB  
-**Submitted:** 2026-08-19T19:21:39.837Z  
+**Memory:** 42.7 MB  
+**Submitted:** 2026-08-19T19:21:50.219Z  
 
 ```java
 class Solution {
     public String gcdOfStrings(String str1, String str2) {
-        if ((str1 + str2).equals(str2 + str1)) {
+        if (!(str1 + str2).equals(str2 + str1)) {
             return "";
         }
         int a = str1.length();
