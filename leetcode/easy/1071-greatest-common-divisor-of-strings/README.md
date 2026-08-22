@@ -45,8 +45,8 @@ Given two strings `str1` and `str2`, return  *the largest string* `x` *such that
 
 **Language:** Java  
 **Runtime:** 1 ms (beats 94.72%)  
-**Memory:** 43.6 MB (beats 42.45%)  
-**Submitted:** 2026-08-21T06:54:10.553Z  
+**Memory:** 43.8 MB (beats 15.61%)  
+**Submitted:** 2026-08-21T06:54:24.471Z  
 
 ```java
 class Solution {
@@ -62,6 +62,7 @@ class Solution {
             a = b;
             b = temp;
         }
+
         return str1.substring(0, a);
 }
 }
