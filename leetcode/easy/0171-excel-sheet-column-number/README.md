@@ -58,14 +58,13 @@ Output: 701
 
 **Language:** Java  
 **Runtime:** 1 ms (beats 91.08%)  
-**Memory:** 43.5 MB (beats 54.75%)  
-**Submitted:** 2026-08-24T16:11:21.222Z  
+**Memory:** 43.4 MB (beats 86.68%)  
+**Submitted:** 2026-08-24T16:11:54.711Z  
 
 ```java
 class Solution {
     public int titleToNumber(String columnTitle) {
         int result = 0;
-        
         for(int i = 0; i< columnTitle.length(); i++){
             char ch = columnTitle.charAt(i);
             int value = ch - 'A' + 1;
