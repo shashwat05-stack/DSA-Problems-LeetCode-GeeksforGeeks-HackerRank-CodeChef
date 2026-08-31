@@ -58,9 +58,9 @@ Explanation: Alice cannot win this game. She can end the game in a draw if she d
 ## Solution
 
 **Language:** Java  
-**Runtime:** 11 ms (beats 36.01%)  
-**Memory:** 86.6 MB (beats 27.91%)  
-**Submitted:** 2026-08-27T10:59:39.760Z  
+**Runtime:** 11 ms (beats 36.20%)  
+**Memory:** 86.7 MB (beats 28.17%)  
+**Submitted:** 2026-08-31T10:00:05.676Z  
 
 ```java
 class Solution {
