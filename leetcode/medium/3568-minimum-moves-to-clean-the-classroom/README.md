@@ -69,20 +69,17 @@ No valid path collects all `'L'`.
 ## Solution
 
 **Language:** Java  
-**Runtime:** 119 ms (beats 90.48%)  
-**Memory:** 61.1 MB (beats 76.19%)  
-**Submitted:** 2026-09-01T15:03:56.101Z  
+**Runtime:** 123 ms (beats 90.48%)  
+**Memory:** 61 MB (beats 76.19%)  
+**Submitted:** 2026-09-01T15:05:10.659Z  
 
 ```java
 class Solution {
     public int minMoves(String[] classroom, int energy) {
         int m = classroom.length;
         int n = classroom[0].length();
-
         int startRow = 0;
         int startCol = 0;
-
-        // Give every litter a bit number
         int[][] litterIndex = new int[m][n];
         for (int[] row : litterIndex) {
             Arrays.fill(row, -1);
@@ -104,15 +101,11 @@ class Solution {
             }
         }
 
-        // No litter
         if (litterCount == 0) {
             return 0;
         }
 
         int allCollected = (1 << litterCount) - 1;
-
-        // bestEnergy[row][col][mask]
-        // Maximum energy with which we have reached this state
         int[][][] bestEnergy =
                 new int[m][n][1 << litterCount];
 
@@ -124,7 +117,6 @@ class Solution {
 
         Queue<int[]> queue = new LinkedList<>();
 
-        // row, col, collectedMask, remainingEnergy, moves
         queue.offer(new int[]{
                 startRow, startCol, 0, energy, 0
         });
@@ -148,7 +140,6 @@ class Solution {
             int remainingEnergy = current[3];
             int moves = current[4];
 
-            // Cannot make another move
             if (remainingEnergy == 0) {
                 continue;
             }
@@ -158,7 +149,6 @@ class Solution {
                 int newRow = row + dir[0];
                 int newCol = col + dir[1];
 
-                // Check boundaries
                 if (newRow < 0 || newRow >= m ||
                     newCol < 0 || newCol >= n) {
                     continue;
@@ -166,7 +156,6 @@ class Solution {
 
                 char cell = classroom[newRow].charAt(newCol);
 
-                // Cannot pass obstacle
                 if (cell == 'X') {
                     continue;
                 }
@@ -174,23 +163,19 @@ class Solution {
                 int newEnergy = remainingEnergy - 1;
                 int newMask = mask;
 
-                // Collect litter
                 if (cell == 'L') {
                     int index = litterIndex[newRow][newCol];
                     newMask |= (1 << index);
                 }
 
-                // Reset energy
                 if (cell == 'R') {
                     newEnergy = energy;
                 }
 
-                // All litter collected
                 if (newMask == allCollected) {
                     return moves + 1;
                 }
 
-                // Only continue if this state has better energy
                 if (newEnergy > bestEnergy[newRow][newCol][newMask]) {
 
                     bestEnergy[newRow][newCol][newMask] = newEnergy;
