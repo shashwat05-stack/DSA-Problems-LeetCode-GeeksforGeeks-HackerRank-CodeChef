@@ -48,18 +48,17 @@ Explanation: The total number of possible ways to draw 7 line segments is 379629
 ## Solution
 
 **Language:** Java  
-**Runtime:** 27 ms (beats 72.90%)  
-**Memory:** 62.9 MB (beats 66.45%)  
-**Submitted:** 2026-09-16T07:16:26.592Z  
+**Runtime:** 26 ms (beats 75.48%)  
+**Memory:** 63 MB (beats 66.45%)  
+**Submitted:** 2026-09-16T07:16:45.733Z  
 
 ```java
 class Solution {
     public int numberOfSets(int n, int k) {
-         int MOD = 1000000007;
+        int MOD = 1000000007;
 
         long[][] dp = new long[k + 1][n];
 
-        // 0 segments
         for (int i = 0; i < n; i++) {
             dp[0][i] = 1;
         }
