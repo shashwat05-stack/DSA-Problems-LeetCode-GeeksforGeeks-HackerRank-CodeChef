@@ -92,9 +92,9 @@ As we can see, users with IDs 30 and 96 visited the mall one time without making
 ## Solution
 
 **Language:** SQL  
-**Runtime:** 1243 ms (beats 97.23%)  
-**Memory:** 0B (beats 100.00%)  
-**Submitted:** 2026-09-26T19:32:31.688Z  
+**Runtime:** 93 ms  
+**Memory:** 0B  
+**Submitted:** 2026-09-26T19:32:36.831Z  
 
 ```sql
 # Write your MySQL query statement below
