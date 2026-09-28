@@ -42,27 +42,39 @@ Output: 0
 ## Solution
 
 **Language:** Java  
-**Runtime:** 0 ms  
-**Memory:** 41.9 MB  
-**Submitted:** 2026-08-19T08:02:35.516Z  
+**Runtime:** 792 ms (beats 18.75%)  
+**Memory:** 79.6 MB (beats 55.43%)  
+**Submitted:** 2026-09-28T19:01:34.565Z  
 
 ```java
 class Solution {
     public int countPrimes(int n) {
-        int count = 0;
-        for(int i = 2; i < n; i++){
-            boolean isPrime = true;
+        if (n <= 2) {
+            return 0;
+        }
 
-            for(int j = 2; j*j <= i; j++) {
-                if(i % j == 0) {
-                    isPrime = false;
-                    break;
+        boolean[] isPrime = new boolean[n];
+
+        for (int i = 2; i < n; i++) {
+            isPrime[i] = true;
+        }
+
+        for (int i = 2; i * i < n; i++) {
+            if (isPrime[i]) {
+                for (int j = i * i; j < n; j += i) {
+                    isPrime[j] = false;
                 }
             }
-            if(isPrime) {
+        }
+
+        int count = 0;
+
+        for (int i = 2; i < n; i++) {
+            if (isPrime[i]) {
                 count++;
             }
         }
+
         return count;
     }
 }
